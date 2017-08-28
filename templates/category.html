@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="col-lg-8">
+  <h6>
+    <span >{{categoryName}} ({{categoryItemsCount}} Items)</span>
+  </h6>
+  <ul >
+    {% for categoryItem in categoryItems %}
+    <a href="{{url_for('showCategoryItem', catalog_id = categoryItem.category_id ,item_id = categoryItem.id )}}">
+      <li >
+        <span >{{categoryItem.name}}</span>
+      </li>
+    </a>
+    {% endfor %}
+  </ul>
+
+  {% if 'username' in session %}
+
+  <button onclick="location.href = '{{url_for('addCategoryItem')}}'" class="btn btn-default">Add Item</button>
+
+  {% endif %}
+
+</div>
+
+{% endblock %}

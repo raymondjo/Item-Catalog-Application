@@ -1,0 +1,39 @@
+/* TEMPLATE STYLES */
+
+.content .container {
+    padding-top: 100px;
+    padding-bottom: 2rem;
+}
+
+.widget-wrapper {
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #e0e0e0;
+    margin-bottom: 2rem;
+}
+
+.extra-margins {
+    margin-top: 1rem;
+    margin-bottom: 2.5rem;
+}
+
+.divider-new {
+    margin-top: 0;
+}
+
+.navbar {
+    background-color: #414a5c;
+}
+
+footer.page-footer {
+    background-color: #414a5c;
+    margin-top: 2rem;
+}
+
+.flash__message {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 700;
+    letter-spacing: .1rem;
+    text-transform: uppercase;
+    color: #9b4dca;
+}
